@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SandCup DevQ Group Challenge — Contacts App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SandCup DevQ Group Challenge</h1>
+    <p><strong>Goal:</strong> Collab  orate to pass all automated tests by fixing specs, code, and communication gaps.</p>
+    <p class="note">Tip: Open DevTools console to see helpful logs from tests.</p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Contacts — UI</h2>
+      <p class="muted">Add contacts and search. This UI should be wired to the API in <code>api.js</code> via <code>app.js</code>.</p>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" placeholder="e.g., Aisha Yusuf">  
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="name@example.com">
+        <label for="phone">Phone</label>
+        <input id="phone" placeholder="10–13 digits, e.g., 9876543210">
+        <div class="row">
+          <!-- dsnkjnsd -->
+          <button id="addBtn" type="submit">Add contact</button>
+          <button id="clearBtn" type="button">Clear all</button>
+        </div>    
+      </form>
+
+      <div class="row" style="margin-top:12px">
+        <label for="query">Search</label>
+        <input id="query" placeholder="Type to filter by name or email">
+      </div>
+
+      <ul id="list" class="list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Automated Tests</h2>
+      <p class="muted">Your objective is to make all tests green without editing <code>tests.js</code>.</p>
+      <div id="test-actions" class="row">
+        <button id="run-tests">Run tests</button>
+        <button id="reset-data">Reset data</button>
+      </div>
+      <ol id="results" class="results"></ol>
+    </section>
+
+    <section class="card">  
+      <h2>Rules</h2>
+      <ul>
+        <li>Work in roles. For the first 5 minutes, only the assigned person may open their file(s): Product (README), QA (tests.js), API (api.js), UI (index.html & app.js).</li>
+        <li>Explain verbally; don’t just copy code across roles. After 5 minutes, collaborate freely.</li>
+        <li>No internet usage. All files are offline.</li>
+      </ul>
+      <p><strong>Hint:</strong> Tests expect specific function names, storage keys, and validation rules.</p>
+    </section>
+  </main>
+
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>
